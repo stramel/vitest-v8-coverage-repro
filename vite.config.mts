@@ -1,12 +1,8 @@
-/// <reference types="vitest" />
+import { defineProject } from "vitest/config";
 
-// Configure Vitest (https://vitest.dev/config/)
-
-import { defineConfig } from 'vite'
-
-export default defineConfig({
+export default defineProject({
   test: {
-    /* for example, use global to avoid globals imports (describe, test, expect): */
-    // globals: true,
+    include: ["./test/**/*.test.js"],
+    exclude: ["./test/fixtures/**/*"],
   },
-})
+});

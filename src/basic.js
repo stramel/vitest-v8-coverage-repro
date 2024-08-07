@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
   debug: 0,

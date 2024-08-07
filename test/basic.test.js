@@ -1,10 +1,9 @@
-import { expect, describe, it } from 'vitest';
-import levels from '../src/basic.js';
+import { expect, describe, it } from "vitest";
+import test from "..";
+import levels from "../src/basic";
 
-// Edit an assertion and save to see HMR in action
-
-describe('levels', () => {
-  it('should pass', () => {
+describe("levels", () => {
+  it("should pass", () => {
     expect(levels.debug).toBe(0);
     expect(levels.info).toBe(1);
     expect(levels.warn).toBe(2);
