@@ -1,0 +1,21 @@
+{
+  "name": "@vitest/example-test",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "cover": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "latest",
+    "@vitest/ui": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
